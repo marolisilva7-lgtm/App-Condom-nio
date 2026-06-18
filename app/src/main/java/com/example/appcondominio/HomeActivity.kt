@@ -36,14 +36,21 @@ class HomeActivity : AppCompatActivity() {
         val auto = findViewById<Button>(R.id.auto)
 
         auto.setOnClickListener {
-            val x= Intent ( this, ReservaActivity::class.java)
+            val x= Intent ( this, AutorizacaoActivity::class.java)
             startActivity(x)
         }
 
         val mural = findViewById<Button>(R.id.mural)
 
         mural.setOnClickListener {
-            val x= Intent ( this, ReservaActivity::class.java)
+            val x= Intent ( this, MuralActivity::class.java)
+            startActivity(x)
+        }
+
+        val mudanca = findViewById<Button>(R.id.btnMudanca)
+
+        mudanca.setOnClickListener {
+            val x= Intent ( this, MudancaActivity::class.java)
             startActivity(x)
         }
 
